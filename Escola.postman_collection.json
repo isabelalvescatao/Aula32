@@ -1,0 +1,175 @@
+{
+	"info": {
+		"_postman_id": "5207dd7d-4259-4fa1-8195-6b5d1df357af",
+		"name": "Escola",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22147007"
+	},
+	"item": [
+		{
+			"name": "Alunos",
+			"item": [
+				{
+					"name": "Alunos",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Aluno",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "CadastrarAluno",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 0,\n    \"nome\": \"string\",\n    \"sobrenome\": \"string\",\n    \"aluno\": \"string\",\n    \"curso\": {\n        \"id\": 0,\n        \"nome\": \"string\",\n        \"alunos\": [\n            \"string\"\n        ]\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7161/api/Alunos",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7161",
+							"path": [
+								"api",
+								"Alunos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeletarAlunoPelaId",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7161/api/Alunos",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7161",
+							"path": [
+								"api",
+								"Alunos"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cursos",
+			"item": [
+				{
+					"name": "Cursos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7161/api/Cursos",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7161",
+							"path": [
+								"api",
+								"Cursos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Curso",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7161/api/Cursos/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7161",
+							"path": [
+								"api",
+								"Cursos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CadastrarCurso",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": 0,\n  \"nome\": \"string\",\n  \"alunos\": [\n    {\n      \"id\": 0,\n      \"nome\": \"string\",\n      \"sobrenome\": \"string\",\n      \"curso\": \"string\"\n    }\n  ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7161/api/Cursos",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7161",
+							"path": [
+								"api",
+								"Cursos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeletarCursoPelaId",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7161/api/Cursos",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7161",
+							"path": [
+								"api",
+								"Cursos"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
